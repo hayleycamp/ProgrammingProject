@@ -5,14 +5,12 @@ class Splash {
   this.splashBorder = 100;
   fill(255);
   stroke(255, 0, 0)
-  rect(this.splashBorder, this.splashBorder, windowWidth-this.splashBorder*2, windowHeight-this.splashBorder*2);
-  // draw a rectangle like this in a 3D enviornment
-  // rect(this.splashBorder-(windowWidth/2), this.splashBorder-(windowHeight/2), windowWidth-this.splashBorder*2, windowHeight-this.splashBorder*2);
+  rect(this.splashBorder-(windowWidth/2), this.splashBorder-(windowHeight/2), windowWidth-this.splashBorder*2, windowHeight-this.splashBorder*2);
   fill(0, 0, 222);
   strokeWeight(3)
    
-  line(windowWidth-this.splashBorder-40, this.splashBorder+20,windowWidth-this.splashBorder-20, this.splashBorder+40)
-   line(windowWidth-this.splashBorder-20, this.splashBorder+20,windowWidth-this.splashBorder-40, this.splashBorder+40)
+  line(windowWidth/2-this.splashBorder-40, -windowHeight/2 + this.splashBorder+20,windowWidth/2-this.splashBorder-20, -windowHeight/2 + this.splashBorder+40)
+   line(windowWidth/2-this.splashBorder-20, -windowHeight/2 + this.splashBorder+20,windowWidth/2-this.splashBorder-40, -windowHeight/2 + this.splashBorder+40)
    
   this.title = createDiv("My Project Title");
   this.title.style('color:deeppink');
@@ -33,11 +31,10 @@ class Splash {
   
   update(){
        if(mouseX > windowWidth-this.splashBorder-40 && 
-          mouseX < windowWidth-this.splashBorder-20 
-          && mouseY < this.splashBorder+40 
-          && mouseY > this.splashBorder+20
+          mouseX < windowWidth-this.splashBorder-20 && mouseY < this.splashBorder+40 && mouseY > -this.splashBorder+20
      ){
      return true
+
    }
   }
  

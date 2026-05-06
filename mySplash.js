@@ -12,15 +12,15 @@ class Splash {
   line(windowWidth/2-this.splashBorder-40, -windowHeight/2 + this.splashBorder+20,windowWidth/2-this.splashBorder-20, -windowHeight/2 + this.splashBorder+40)
    line(windowWidth/2-this.splashBorder-20, -windowHeight/2 + this.splashBorder+20,windowWidth/2-this.splashBorder-40, -windowHeight/2 + this.splashBorder+40)
    
-  this.title = createDiv("My Project Title");
+  this.title = createDiv("Spiral Screensavers");
   this.title.style('color:deeppink');
-  this.title.style('font-family: Arial, Helvetica, sans-serif');
+  this.title.style('font-family: Arial');
   this.title.position(this.splashBorder+20, this.splashBorder+20);
   
   this.name = createDiv("By Hayley Camp");
   this.name.position(this.splashBorder+20, this.splashBorder+60);
   
-  this.info = createDiv("You can read a bunch of stuff about my project here because I've been working very hard in this class and I have so much to say about my project, the way it works, and why I made it. It's such an incredable joy to be coding in p5js, the best programming language on Earth. <p> I could go on and on and on. <p> <a href=>https://editor.p5js.org/hayleycamp/sketches/STN2hZfiT");
+  this.info = createDiv("I was inspired to make this project because I was so mesmerized by screen savers as a kid and with my background in math I thought it could be cool to design my own. <p> <a href=>https://editor.p5js.org/hayleycamp/sketches/STN2hZfiT");
   
   this.info.position(this.splashBorder+20, this.splashBorder+100);
   this.info.size(windowWidth-this.splashBorder*2-50, windowHeight-this.splashBorder*2-50)
